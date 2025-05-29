@@ -6,6 +6,9 @@ body
     margin: 0;
     margin-top: 5em;
     padding: 0;
+    width: 100%;
+    display: inline-block;
+    justify-items: center;
 }
 
 main
@@ -14,6 +17,12 @@ main
     border-radius: 2em;
     margin: 2em;
     padding: 2em;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-shadow: rgba(0,0,0,.4) 0px 0px 10px 2px;
 }
 
 .titulo
@@ -21,24 +30,26 @@ main
     font-size: 3em;
     color: #0D3248;
     padding: 0;
-    margin: 0.5em 0;
+    margin: 0.1em 0;
+    width: 100%;
 }
 
 form
 {
-    display: inline-block;
-    height: 500px;
-    align-items: space-between;
-
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height:100%;
 }
 
 .dados
 {
     border-style: none;
-    display: inline-block;
+    display: inline;
     font-size: 1em;
     background-color: #C3EAEC;
-    width: 97.5%;
+    width: 100%;
     border-radius: 1em;
     padding: .5em;
     margin: 20px 0 0 0;
@@ -55,22 +66,116 @@ form
 {
     margin: 0;
     padding: 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .item_pessoal
 {
     list-style: none;
-    margin: 0.4em;    
-    font-size: .9em;
+    margin: 0.2em;    
 }
 
+.item_pessoal input, .item_pessoal select
+{
+    width: 40%;
+    padding: .2em;
+    border-radius: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+    height: 1.8em;
+}
 .item_pessoal label
 {
     margin: 0 .5em 0 0;
     text-align: left;
+    
 }
 
 h3
 {
     font-size: 1em;
+    font-weight: 100;  
+    margin: .5em;  
+}
+
+.lista_interesse
+{
+    margin: 0;
+    padding: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    align-content:flex-end;
+}
+
+.lista_interesse li
+{
+    list-style: none;
+    margin: 0.3em;  
+}
+
+.lista_interesse label
+{
+    margin: 0 .5em 0 0;
+    text-align: left;
+    align-self: ;
+}
+
+.lista_interesse input
+{
+    transform: scale(1.5);
+    accent-color: #1564C3;
+    border-radius: 1px;
+}
+
+.botoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: .6em;
+}
+
+.botoes input
+{
+    width: 4.9em;
+    height: 2.5em;
+    border-radius: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+ 
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.2em;
+}
+
+.botoes input:hover
+{
+    background-color: #0D3248;
+    color: white;
+}
+
+.enviar
+{
+    background-color: #1564C3;
+    color: white;
+}
+
+
+.texto
+{
+    padding: 0.5em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.texto textarea
+{
+   
+    height: 5em;
+    padding: .2em;
+    border-radius: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
 }

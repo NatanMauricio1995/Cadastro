@@ -85,46 +85,79 @@
                 </section>
 
                 <section class="dados">
-                    <h2 class="titulo_sessao">Dados pessoais</h2>
+                    <h2 class="titulo_sessao">Dados profissionais</h2>
                     <article>
                         <h3>Natureza do cargo</h2>
+                        <ul class="lista_interesse">
+                            <li>
+                                <input type="radio" name="cargo" id="gerencia" value="gerencia">
+                                <label for="gerencia" checked>Gerência</label>
+                            </li>
+        
+                            <li>
+                                <input type="radio" name="cargo" id="financeiro" value="financeiro">
+                                <label for="financeiro">Financeiro</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="cargo" id="recepcao" value="recepcao">
+                                <label for="recepcao">Recepção</label>
+                            </li>
+                            
+                            <li>
+                                <input type="radio" name="cargo" id="juridico" value="juridico">
+                                <label for="juridico">Jurídico</label>
+                            </li>  
+
+                            
+                        </ul>
+                        
                   
-                            <input type="radio" name="cargo" id="gerencia" value="gerencia">
-                            <label for="gerencia">Gerência</label>
-        
-                            <input type="radio" name="cargo" id="financeiro" value="financeiro">
-                            <label for="financeiro">Financeiro</label>
-        
-                            <input type="radio" name="cargo" id="recepcao" value="recepcao">
-                            <label for="recepcao">Recepção</label>
-        
-                            <input type="radio" name="cargo" id="juridico" value="juridico">
-                            <label for="juridico">Jurídico</label>
+                            
         
                     </article>
                         <h3>Área de interesse</h2>
-                            <input type="checkbox" name="interesse" id="computacao">
-                            <label for="computacao">Computação</label>
+                        <ul class="lista_interesse">
+                            <li>
+                                <input type="checkbox" name="interesse" id="computacao">
+                                <label for="computacao">Computação</label>
+                            </li>
+                            
+                            <li>
+                                <input type="checkbox" name="interesse" id="biologia">
+                                <label for="biologia">Biologia</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="interesse" id="ambiente">
+                                <label for="ambiente">Meio Ambiente</label>
+                            </li>
+                            
+                            <li>
+                                <input type="checkbox" name="interesse" id="engenharia">
+                                <label for="engenharia">Engenharia</label>
+
+                            </li>
+                            
         
-                            <input type="checkbox" name="interesse" id="biologia">
-                            <label for="biologia">Biologia</label>
-        
-                            <input type="checkbox" name="interesse" id="ambiente">
-                            <label for="ambiente">Meio Ambiente</label>
-        
-                            <input type="checkbox" name="interesse" id="engenharia">
-                            <label for="engenharia">Engenharia</label>
-        
-                            <input type="checkbox" name="interesse" id="historia">
-                            <label for="historia">História</label>
-        
-                            <label for="texto">Mini-currículo</label>
-                            <textarea name="texto" id="texto" maxlength="5000" rows="5" cols="50"></textarea>
+
+
+
+
+                        </ul>
+                            <article class="texto">        
+                                <label for="texto">Mini-currículo:</label>
+                                <textarea name="texto" id="texto" maxlength="5000" rows="5" cols="43"></textarea>
+                            </article>
                     </article>
+
+                    <article class="botoes">
+                        <input class="enviar" type="submit" value="Enviar">
+                        <input type="reset" name="reset" value="Limpar">
+                    </article>
+
                 </section>
-                <input type="submit" value="Enviar">
-                <input type="reset" name="reset" value="Limpar"> 
-            </form>
+             </form>
         </main>
 	</body>
 </html>
