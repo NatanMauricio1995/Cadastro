@@ -9,100 +9,122 @@
         <link href="design.css" rel="stylesheet">
     </head>
 	<body>
-		<h1>Formulário</h1>
-        <form action="#" method="post" name="formulario"
-        id="formulario">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" maxlenght="100" id="nome">
-            <br>
-            <label for="endereco">Endereço:</label>
-            <input type="text" name="endereco" maxlenght="100" id="endeco">
-            <br>
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" maxlenght="100" id="cidade">
-            <br>
-            <label for="estado">Estado:</label>
-            <select name="estado" id="estado">
-                <option value="">Selecione um Estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-            </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            Natureza do cargo
-            <br>
-            <input type="radio" name="cargo" id="gerencia" value="gerencia">
-            <label for="gerencia">Gerência</label>
+        <main>
+            <h1 class="titulo">Formulário</h1>
 
-            <input type="radio" name="cargo" id="financeiro" value="financeiro">
-            <label for="financeiro">Financeiro</label>
+            <form action="#" method="post" name="formulario" id="formulario">
+                <section class="dados">
+                    <h2 class="titulo_sessao">Dados Pessoais</h2>
+                    <ul class="lista_pessoal">
+                        <li class="item_pessoal">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" maxlenght="100" id="nome">
+                        </li>
 
-            <input type="radio" name="cargo" id="recepcao" value="recepcao">
-            <label for="recepcao">Recepção</label>
+                        <li class="item_pessoal">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" name="endereco" maxlenght="100" id="endereco">
+                        </li>
 
-            <input type="radio" name="cargo" id="adm" value="adm">
-            <label for="adm">Administração</label>
+                        <li class="item_pessoal">
+                            <label for="cidade">Cidade:</label>
+                            <select name="cidade" id="cidade">
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Aracaju">Aracaju</option>
+                                <option value="Belo Horizonte">Belo Horizonte</option>
+                                <option value="Belém">Belém</option>
+                                <option value="Blumenau">Blumenau</option>
+                                <option value="Brasília">Brasília</option>
+                                <option value="Campo Grande">Campo Grande</option>
+                                <option value="Cascavel">Cascavel</option>
+                                <option value="Caxias do Sul">Caxias do Sul</option>
+                                <option value="Cuiabá">Cuiabá</option>
+                                <option value="Curitiba">Curitiba</option>
+                                <option value="Diadema">Diadema</option>
+                                <option value="Duque de Caxias">Duque de Caxias</option>
+                                <option value="Feira de Santana">Feira de Santana</option>
+                                <option value="Florianópolis">Florianópolis</option>
+                                <option value="Fortaleza">Fortaleza</option>
+                                <option value="Franca">Franca</option>
+                                <option value="Goiânia">Goiânia</option>
+                                <option value="Guarulhos">Guarulhos</option>
+                                <option value="Imperatriz">Imperatriz</option>
+                                <option value="Joinville">Joinville</option>
+                                <option value="Juiz de Fora">Juiz de Fora</option>
+                                <option value="Londrina">Londrina</option>
+                                <option value="Maceió">Maceió</option>
+                                <option value="Manaus">Manaus</option>
+                                <option value="Maringá">Maringá</option>
+                                <option value="Mauá">Mauá</option>
+                                <option value="Niterói">Niterói</option>
+                                <option value="Natal">Natal</option>
+                                <option value="Nova Iguaçu">Nova Iguaçu</option>
+                                <option value="Olinda">Olinda</option>
+                                <option value="Osasco">Osasco</option>
+                                <option value="Palmas">Palmas</option>
+                                <option value="Pelotas">Pelotas</option>
+                                <option value="Petrolina">Petrolina</option>
+                                <option value="Porto Alegre">Porto Alegre</option>
+                                <option value="Porto Velho">Porto Velho</option>
+                                <option value="Recife">Recife</option>
+                                <option value="Ribeirão Preto">Ribeirão Preto</option>
+                                <option value="Rio Branco">Rio Branco</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Santos">Santos</option>
+                                <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                                <option value="São Gonçalo">São Gonçalo</option>
+                                <option value="São José">São José</option>
+                                <option value="São José dos Campos">São José dos Campos</option>
+                                <option value="São Luís">São Luís</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Sorocaba">Sorocaba</option>
+                                <option value="Vitória">Vitória</option>
+                            </select>
+                        </li>
+                    </ul>
+                </section>
 
-            <input type="radio" name="cargo" id="juridico" value="juridico">
-            <label for="juridico">Jurídico</label>
-            <br>
-            <br>
-            Área de interesse
-            <br>
-            <input type="checkbox" name="interesse" id="computacao">
-            <label for="computacao">Computação</label>
-
-            <input type="checkbox" name="interesse" id="biologia">
-            <label for="biologia">Biologia</label>
-
-            <input type="checkbox" name="interesse" id="ambiente">
-            <label for="ambiente">Meio Ambiente</label>
-
-            <input type="checkbox" name="interesse" id="engenharia">
-            <label for="engenharia">Engenharia</label>
-
-            <input type="checkbox" name="interesse" id="historia">
-            <label for="historia">História</label>
-            <br>
-            <br>
-            <label for="texto">Mini-currículo</label>
-            <textarea name="texto" id="texto" maxlength="5000" rows="5" cols="50
-            "></textarea>
-            
-        </fieldset>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" name="reset" value="Limpar"> 
-    </form>
-
-    
+                <section class="dados">
+                    <h2 class="titulo_sessao">Dados pessoais</h2>
+                    <article>
+                        <h3>Natureza do cargo</h2>
+                  
+                            <input type="radio" name="cargo" id="gerencia" value="gerencia">
+                            <label for="gerencia">Gerência</label>
+        
+                            <input type="radio" name="cargo" id="financeiro" value="financeiro">
+                            <label for="financeiro">Financeiro</label>
+        
+                            <input type="radio" name="cargo" id="recepcao" value="recepcao">
+                            <label for="recepcao">Recepção</label>
+        
+                            <input type="radio" name="cargo" id="juridico" value="juridico">
+                            <label for="juridico">Jurídico</label>
+        
+                    </article>
+                        <h3>Área de interesse</h2>
+                            <input type="checkbox" name="interesse" id="computacao">
+                            <label for="computacao">Computação</label>
+        
+                            <input type="checkbox" name="interesse" id="biologia">
+                            <label for="biologia">Biologia</label>
+        
+                            <input type="checkbox" name="interesse" id="ambiente">
+                            <label for="ambiente">Meio Ambiente</label>
+        
+                            <input type="checkbox" name="interesse" id="engenharia">
+                            <label for="engenharia">Engenharia</label>
+        
+                            <input type="checkbox" name="interesse" id="historia">
+                            <label for="historia">História</label>
+        
+                            <label for="texto">Mini-currículo</label>
+                            <textarea name="texto" id="texto" maxlength="5000" rows="5" cols="50"></textarea>
+                    </article>
+                </section>
+                <input type="submit" value="Enviar">
+                <input type="reset" name="reset" value="Limpar"> 
+            </form>
+        </main>
 	</body>
 </html>
