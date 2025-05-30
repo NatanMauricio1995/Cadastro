@@ -17,7 +17,7 @@ main
     border-radius: 2em;
     margin: 2em;
     padding: 2em;
-    width: 70%;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -49,7 +49,7 @@ form
     display: inline;
     font-size: 1em;
     background-color: #C3EAEC;
-    width: 100%;
+    width: 95%;
     border-radius: 1em;
     padding: .5em;
     margin: 20px 0 0 0;
